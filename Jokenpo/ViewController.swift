@@ -10,11 +10,17 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    @IBOutlet weak var imagemJogador: UIImageView!
+    @IBOutlet weak var imagemMaquina: UIImageView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+        
+        imagemJogador        // Do any additional setup after loading the view.
     }
 
-
+    @IBAction func botaoSelecionado(_ sender: Any) {
+    }
+    
 }
 
