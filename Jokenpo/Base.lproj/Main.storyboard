@@ -26,10 +26,10 @@
                                         <rect key="frame" x="33.5" y="0.0" width="347" height="280.5"/>
                                         <subviews>
                                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icone_nome" translatesAutoresizingMaskIntoConstraints="NO" id="HDy-7m-nig">
-                                                <rect key="frame" x="73.5" y="50" width="200" height="66.5"/>
+                                                <rect key="frame" x="73.5" y="50" width="200" height="66"/>
                                             </imageView>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Jogue!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bMs-QY-HsB" userLabel="Reesultado">
-                                                <rect key="frame" x="108" y="136.5" width="131.5" height="83.5"/>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Vamos jogar!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bMs-QY-HsB" userLabel="Reesultado">
+                                                <rect key="frame" x="38" y="136" width="271" height="83.5"/>
                                                 <fontDescription key="fontDescription" name="MuktaMahee-Regular" family="Mukta Mahee" pointSize="50"/>
                                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <nil key="highlightedColor"/>
@@ -49,8 +49,9 @@
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="kyA-yp-Zd6">
                                                 <rect key="frame" x="0.0" y="0.0" width="207" height="281"/>
                                                 <subviews>
-                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="r0x-P4-e8Y">
+                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="r0x-P4-e8Y">
                                                         <rect key="frame" x="28" y="78" width="150" height="150"/>
+                                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                     </imageView>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Jogador" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5cb-Gy-vSA">
                                                         <rect key="frame" x="54.5" y="20" width="98.5" height="50"/>
@@ -62,7 +63,6 @@
                                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <constraints>
                                                     <constraint firstItem="5cb-Gy-vSA" firstAttribute="centerX" secondItem="kyA-yp-Zd6" secondAttribute="centerX" id="PrN-dp-ZSL"/>
-                                                    <constraint firstItem="r0x-P4-e8Y" firstAttribute="centerX" secondItem="kyA-yp-Zd6" secondAttribute="centerX" id="ue6-1q-ygy"/>
                                                 </constraints>
                                             </view>
                                             <view contentMode="scaleToFill" horizontalCompressionResistancePriority="150" verticalCompressionResistancePriority="150" translatesAutoresizingMaskIntoConstraints="NO" id="KaQ-SR-QHY">
@@ -74,14 +74,14 @@
                                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
-                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="clU-a3-Mrr">
-                                                        <rect key="frame" x="28" y="78" width="150" height="150"/>
+                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="clU-a3-Mrr">
+                                                        <rect key="frame" x="28" y="78" width="151" height="150"/>
+                                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                     </imageView>
                                                 </subviews>
                                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <constraints>
                                                     <constraint firstItem="4h2-lN-SD3" firstAttribute="centerX" secondItem="KaQ-SR-QHY" secondAttribute="centerX" id="HcY-o3-P6g"/>
-                                                    <constraint firstItem="clU-a3-Mrr" firstAttribute="centerX" secondItem="KaQ-SR-QHY" secondAttribute="centerX" id="nk7-bK-hNV"/>
                                                 </constraints>
                                             </view>
                                         </subviews>
@@ -109,10 +109,12 @@
                                                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                 <nil key="highlightedColor"/>
                                                             </label>
-                                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LA5-xB-wW0">
+                                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LA5-xB-wW0" userLabel="pedra">
                                                                 <rect key="frame" x="10" y="24" width="120" height="120"/>
                                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                                <state key="normal" backgroundImage="pedra"/>
+                                                                <state key="normal" title="pedra" backgroundImage="pedra">
+                                                                    <color key="titleColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                </state>
                                                                 <connections>
                                                                     <action selector="botaoSelecionado:" destination="BYZ-38-t0r" eventType="touchUpInside" id="IBJ-I5-3zL"/>
                                                                 </connections>
@@ -130,10 +132,12 @@
                                                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                 <nil key="highlightedColor"/>
                                                             </label>
-                                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NZD-Vd-wED">
+                                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NZD-Vd-wED" userLabel="papel">
                                                                 <rect key="frame" x="9" y="24" width="120" height="120"/>
                                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                                <state key="normal" backgroundImage="papel"/>
+                                                                <state key="normal" title="papel" backgroundImage="papel">
+                                                                    <color key="titleColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                </state>
                                                                 <connections>
                                                                     <action selector="botaoSelecionado:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Vx9-Fp-ZAX"/>
                                                                 </connections>
@@ -151,10 +155,12 @@
                                                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                 <nil key="highlightedColor"/>
                                                             </label>
-                                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0qD-Dh-guy">
+                                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0qD-Dh-guy" userLabel="tesoura">
                                                                 <rect key="frame" x="9" y="24" width="120" height="120"/>
                                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                                <state key="normal" backgroundImage="tesoura"/>
+                                                                <state key="normal" title="tesoura" backgroundImage="tesoura">
+                                                                    <color key="titleColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                </state>
                                                                 <connections>
                                                                     <action selector="botaoSelecionado:" destination="BYZ-38-t0r" eventType="touchUpInside" id="QRj-0G-ZEG"/>
                                                                 </connections>
@@ -168,7 +174,6 @@
                                         </subviews>
                                         <constraints>
                                             <constraint firstItem="Cyu-0k-g6f" firstAttribute="centerX" secondItem="F7K-S5-d2j" secondAttribute="centerX" id="I1R-QZ-y2P"/>
-                                            <constraint firstItem="Cyu-0k-g6f" firstAttribute="centerX" secondItem="F7K-S5-d2j" secondAttribute="centerX" id="n4V-vq-TKa"/>
                                         </constraints>
                                     </stackView>
                                 </subviews>
@@ -201,6 +206,7 @@
                     <connections>
                         <outlet property="imagemJogador" destination="r0x-P4-e8Y" id="v1w-jF-tSK"/>
                         <outlet property="imagemMaquina" destination="clU-a3-Mrr" id="FTp-1C-A98"/>
+                        <outlet property="resultado" destination="bMs-QY-HsB" id="6RA-Zg-qQr"/>
                     </connections>
                 </viewController>
             </objects>
@@ -209,7 +215,7 @@
     </scenes>
     <resources>
         <image name="background" width="150" height="150"/>
-        <image name="icone_nome" width="200" height="66.5"/>
+        <image name="icone_nome" width="200" height="66"/>
         <image name="papel" width="341" height="341"/>
         <image name="pedra" width="341" height="341"/>
         <image name="tesoura" width="341" height="341"/>
