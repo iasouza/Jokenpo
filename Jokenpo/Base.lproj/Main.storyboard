@@ -23,13 +23,13 @@
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="862"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="tpL-sb-Ssh" userLabel="TopView">
-                                        <rect key="frame" x="33.5" y="0.0" width="347" height="280.5"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="280.5"/>
                                         <subviews>
                                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icone_nome" translatesAutoresizingMaskIntoConstraints="NO" id="HDy-7m-nig">
-                                                <rect key="frame" x="73.5" y="50" width="200" height="66"/>
+                                                <rect key="frame" x="107" y="50" width="200" height="66.5"/>
                                             </imageView>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Vamos jogar!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bMs-QY-HsB" userLabel="Reesultado">
-                                                <rect key="frame" x="38" y="136" width="271" height="83.5"/>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Jokenpô!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bMs-QY-HsB" userLabel="Reesultado">
+                                                <rect key="frame" x="117" y="136.5" width="180" height="83.5"/>
                                                 <fontDescription key="fontDescription" name="MuktaMahee-Regular" family="Mukta Mahee" pointSize="50"/>
                                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <nil key="highlightedColor"/>
@@ -49,45 +49,64 @@
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="kyA-yp-Zd6">
                                                 <rect key="frame" x="0.0" y="0.0" width="207" height="281"/>
                                                 <subviews>
-                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="r0x-P4-e8Y">
-                                                        <rect key="frame" x="28" y="78" width="150" height="150"/>
-                                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                    </imageView>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Jogador" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5cb-Gy-vSA">
-                                                        <rect key="frame" x="54.5" y="20" width="98.5" height="50"/>
-                                                        <fontDescription key="fontDescription" name="MuktaMahee-Regular" family="Mukta Mahee" pointSize="30"/>
-                                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                        <nil key="highlightedColor"/>
-                                                    </label>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="Bux-X2-QJN">
+                                                        <rect key="frame" x="28.5" y="36.5" width="150" height="208"/>
+                                                        <subviews>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Jogador" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5cb-Gy-vSA">
+                                                                <rect key="frame" x="26" y="0.0" width="98.5" height="50"/>
+                                                                <fontDescription key="fontDescription" name="MuktaMahee-Regular" family="Mukta Mahee" pointSize="30"/>
+                                                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="r0x-P4-e8Y">
+                                                                <rect key="frame" x="0.0" y="58" width="150" height="150"/>
+                                                                <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                <constraints>
+                                                                    <constraint firstAttribute="height" constant="150" id="biR-DI-5U5"/>
+                                                                    <constraint firstAttribute="width" constant="150" id="kAN-ow-dyh"/>
+                                                                </constraints>
+                                                            </imageView>
+                                                        </subviews>
+                                                    </stackView>
                                                 </subviews>
                                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <constraints>
-                                                    <constraint firstItem="5cb-Gy-vSA" firstAttribute="centerX" secondItem="kyA-yp-Zd6" secondAttribute="centerX" id="PrN-dp-ZSL"/>
+                                                    <constraint firstItem="Bux-X2-QJN" firstAttribute="centerY" secondItem="kyA-yp-Zd6" secondAttribute="centerY" id="IxL-zM-t6K"/>
+                                                    <constraint firstItem="Bux-X2-QJN" firstAttribute="centerX" secondItem="kyA-yp-Zd6" secondAttribute="centerX" id="cdM-aM-hJ4"/>
                                                 </constraints>
                                             </view>
                                             <view contentMode="scaleToFill" horizontalCompressionResistancePriority="150" verticalCompressionResistancePriority="150" translatesAutoresizingMaskIntoConstraints="NO" id="KaQ-SR-QHY">
                                                 <rect key="frame" x="207" y="0.0" width="207" height="281"/>
                                                 <subviews>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Máquina" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4h2-lN-SD3">
-                                                        <rect key="frame" x="49" y="20" width="109.5" height="50"/>
-                                                        <fontDescription key="fontDescription" name="MuktaMahee-Regular" family="Mukta Mahee" pointSize="30"/>
-                                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                        <nil key="highlightedColor"/>
-                                                    </label>
-                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="clU-a3-Mrr">
-                                                        <rect key="frame" x="28" y="78" width="151" height="150"/>
-                                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                    </imageView>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="qad-ZP-qMJ">
+                                                        <rect key="frame" x="28.5" y="36.5" width="150" height="208"/>
+                                                        <subviews>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Máquina" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4h2-lN-SD3">
+                                                                <rect key="frame" x="20.5" y="0.0" width="109.5" height="50"/>
+                                                                <fontDescription key="fontDescription" name="MuktaMahee-Regular" family="Mukta Mahee" pointSize="30"/>
+                                                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="clU-a3-Mrr">
+                                                                <rect key="frame" x="0.0" y="58" width="150" height="150"/>
+                                                                <constraints>
+                                                                    <constraint firstAttribute="width" constant="150" id="0k3-dQ-7BH"/>
+                                                                    <constraint firstAttribute="height" constant="150" id="0mA-K3-jLX"/>
+                                                                </constraints>
+                                                            </imageView>
+                                                        </subviews>
+                                                    </stackView>
                                                 </subviews>
                                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <constraints>
-                                                    <constraint firstItem="4h2-lN-SD3" firstAttribute="centerX" secondItem="KaQ-SR-QHY" secondAttribute="centerX" id="HcY-o3-P6g"/>
+                                                    <constraint firstItem="qad-ZP-qMJ" firstAttribute="centerX" secondItem="KaQ-SR-QHY" secondAttribute="centerX" id="96v-Az-mFb"/>
+                                                    <constraint firstItem="qad-ZP-qMJ" firstAttribute="centerY" secondItem="KaQ-SR-QHY" secondAttribute="centerY" id="cGS-ZX-i3E"/>
                                                 </constraints>
                                             </view>
                                         </subviews>
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                     </stackView>
-                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="11" translatesAutoresizingMaskIntoConstraints="NO" id="F7K-S5-d2j">
+                                    <stackView opaque="NO" contentMode="scaleAspectFit" axis="vertical" spacing="1" translatesAutoresizingMaskIntoConstraints="NO" id="F7K-S5-d2j">
                                         <rect key="frame" x="0.0" y="581.5" width="414" height="280.5"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Escolha sua jogada:" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WWx-kN-Oar">
@@ -96,24 +115,24 @@
                                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="Cyu-0k-g6f" userLabel="OpcoesView">
-                                                <rect key="frame" x="0.0" y="61" width="414" height="219.5"/>
+                                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="Cyu-0k-g6f" userLabel="OpcoesView">
+                                                <rect key="frame" x="0.0" y="51" width="414" height="229.5"/>
                                                 <subviews>
                                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cJI-RQ-ogT">
-                                                        <rect key="frame" x="0.0" y="0.0" width="138" height="219.5"/>
+                                                        <rect key="frame" x="0.0" y="89.5" width="138" height="50"/>
                                                         <subviews>
-                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Pedra" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kdy-I7-sBf">
-                                                                <rect key="frame" x="39" y="140" width="60.5" height="42"/>
-                                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                                <fontDescription key="fontDescription" name="MuktaMahee-Regular" family="Mukta Mahee" pointSize="25"/>
-                                                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                                <nil key="highlightedColor"/>
-                                                            </label>
-                                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LA5-xB-wW0" userLabel="pedra">
-                                                                <rect key="frame" x="10" y="24" width="120" height="120"/>
-                                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                                <state key="normal" title="pedra" backgroundImage="pedra">
-                                                                    <color key="titleColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LA5-xB-wW0" userLabel="pedra">
+                                                                <rect key="frame" x="9" y="-10.5" width="120" height="71"/>
+                                                                <color key="backgroundColor" red="0.018465828149999999" green="0.47789192200000002" blue="0.50196814540000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                                <constraints>
+                                                                    <constraint firstAttribute="width" constant="120" id="6ji-MB-iWn"/>
+                                                                    <constraint firstAttribute="height" constant="71" id="AwA-sv-9bS"/>
+                                                                </constraints>
+                                                                <fontDescription key="fontDescription" name="MuktaMahee-Regular" family="Mukta Mahee" pointSize="35"/>
+                                                                <size key="titleShadowOffset" width="0.0" height="1"/>
+                                                                <state key="normal" title="pedra">
+                                                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                    <color key="titleShadowColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                 </state>
                                                                 <connections>
                                                                     <action selector="botaoSelecionado:" destination="BYZ-38-t0r" eventType="touchUpInside" id="IBJ-I5-3zL"/>
@@ -121,22 +140,24 @@
                                                             </button>
                                                         </subviews>
                                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <constraints>
+                                                            <constraint firstItem="LA5-xB-wW0" firstAttribute="centerX" secondItem="cJI-RQ-ogT" secondAttribute="centerX" id="Gn6-3f-GcR"/>
+                                                            <constraint firstItem="LA5-xB-wW0" firstAttribute="centerY" secondItem="cJI-RQ-ogT" secondAttribute="centerY" id="UdA-l8-58g"/>
+                                                        </constraints>
                                                     </view>
                                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Fzc-it-FWW">
-                                                        <rect key="frame" x="138" y="0.0" width="138" height="219.5"/>
+                                                        <rect key="frame" x="138" y="89.5" width="138" height="50"/>
                                                         <subviews>
-                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Papel" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="93O-Y3-45u">
-                                                                <rect key="frame" x="40.5" y="140" width="57" height="42"/>
-                                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                                <fontDescription key="fontDescription" name="MuktaMahee-Regular" family="Mukta Mahee" pointSize="25"/>
-                                                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                                <nil key="highlightedColor"/>
-                                                            </label>
-                                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NZD-Vd-wED" userLabel="papel">
-                                                                <rect key="frame" x="9" y="24" width="120" height="120"/>
-                                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                                <state key="normal" title="papel" backgroundImage="papel">
-                                                                    <color key="titleColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NZD-Vd-wED" userLabel="papel">
+                                                                <rect key="frame" x="9" y="-10.5" width="120" height="71"/>
+                                                                <color key="backgroundColor" red="0.018465828149999999" green="0.47789192200000002" blue="0.50196814540000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                                <constraints>
+                                                                    <constraint firstAttribute="height" constant="71" id="Mud-lG-epx"/>
+                                                                    <constraint firstAttribute="width" constant="120" id="VFL-RG-lpS"/>
+                                                                </constraints>
+                                                                <fontDescription key="fontDescription" name="MuktaMahee-Regular" family="Mukta Mahee" pointSize="35"/>
+                                                                <state key="normal" title="papel">
+                                                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                 </state>
                                                                 <connections>
                                                                     <action selector="botaoSelecionado:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Vx9-Fp-ZAX"/>
@@ -144,22 +165,24 @@
                                                             </button>
                                                         </subviews>
                                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <constraints>
+                                                            <constraint firstItem="NZD-Vd-wED" firstAttribute="centerX" secondItem="Fzc-it-FWW" secondAttribute="centerX" id="Rb3-hz-OZd"/>
+                                                            <constraint firstItem="NZD-Vd-wED" firstAttribute="centerY" secondItem="Fzc-it-FWW" secondAttribute="centerY" id="yJ5-Cd-rOX"/>
+                                                        </constraints>
                                                     </view>
                                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="z6e-eW-PxO">
-                                                        <rect key="frame" x="276" y="0.0" width="138" height="219.5"/>
+                                                        <rect key="frame" x="276" y="89.5" width="138" height="50"/>
                                                         <subviews>
-                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Tesoura" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2Wr-o4-seA">
-                                                                <rect key="frame" x="28" y="140" width="82" height="42"/>
-                                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                                <fontDescription key="fontDescription" name="MuktaMahee-Regular" family="Mukta Mahee" pointSize="25"/>
-                                                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                                <nil key="highlightedColor"/>
-                                                            </label>
-                                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0qD-Dh-guy" userLabel="tesoura">
-                                                                <rect key="frame" x="9" y="24" width="120" height="120"/>
-                                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                                <state key="normal" title="tesoura" backgroundImage="tesoura">
-                                                                    <color key="titleColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0qD-Dh-guy" userLabel="tesoura">
+                                                                <rect key="frame" x="9" y="-10.5" width="120" height="71"/>
+                                                                <color key="backgroundColor" red="0.018465828149999999" green="0.47789192200000002" blue="0.50196814540000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                                <constraints>
+                                                                    <constraint firstAttribute="width" constant="120" id="LF5-Dr-wLh"/>
+                                                                    <constraint firstAttribute="height" constant="71" id="XUc-hL-XK9"/>
+                                                                </constraints>
+                                                                <fontDescription key="fontDescription" name="MuktaMahee-Regular" family="Mukta Mahee" pointSize="35"/>
+                                                                <state key="normal" title="tesoura">
+                                                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                 </state>
                                                                 <connections>
                                                                     <action selector="botaoSelecionado:" destination="BYZ-38-t0r" eventType="touchUpInside" id="QRj-0G-ZEG"/>
@@ -167,12 +190,18 @@
                                                             </button>
                                                         </subviews>
                                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <constraints>
+                                                            <constraint firstItem="0qD-Dh-guy" firstAttribute="centerY" secondItem="z6e-eW-PxO" secondAttribute="centerY" id="F7U-kn-7kA"/>
+                                                            <constraint firstItem="0qD-Dh-guy" firstAttribute="centerX" secondItem="z6e-eW-PxO" secondAttribute="centerX" id="JsC-Nl-l1K"/>
+                                                        </constraints>
                                                     </view>
                                                 </subviews>
                                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                             </stackView>
                                         </subviews>
                                         <constraints>
+                                            <constraint firstAttribute="trailing" secondItem="Cyu-0k-g6f" secondAttribute="trailing" id="2xJ-hQ-kqQ"/>
+                                            <constraint firstItem="Cyu-0k-g6f" firstAttribute="leading" secondItem="F7K-S5-d2j" secondAttribute="leading" id="3o0-xd-5RZ"/>
                                             <constraint firstItem="Cyu-0k-g6f" firstAttribute="centerX" secondItem="F7K-S5-d2j" secondAttribute="centerX" id="I1R-QZ-y2P"/>
                                         </constraints>
                                     </stackView>
@@ -182,8 +211,7 @@
                                     <constraint firstAttribute="trailing" secondItem="3Qb-0J-qLO" secondAttribute="trailing" id="7Qy-QG-utx"/>
                                     <constraint firstAttribute="trailing" secondItem="F7K-S5-d2j" secondAttribute="trailing" id="D8O-et-vm1"/>
                                     <constraint firstItem="F7K-S5-d2j" firstAttribute="leading" secondItem="1r9-y6-Cag" secondAttribute="leading" id="EQE-Wf-W8e"/>
-                                    <constraint firstItem="3Qb-0J-qLO" firstAttribute="leading" secondItem="1r9-y6-Cag" secondAttribute="leading" id="EzD-8g-gj2"/>
-                                    <constraint firstItem="3Qb-0J-qLO" firstAttribute="leading" secondItem="1r9-y6-Cag" secondAttribute="leading" id="PmP-gg-Dk0"/>
+                                    <constraint firstAttribute="trailing" secondItem="3Qb-0J-qLO" secondAttribute="trailing" id="T96-x8-2Jy"/>
                                     <constraint firstItem="tpL-sb-Ssh" firstAttribute="centerX" secondItem="1r9-y6-Cag" secondAttribute="centerX" id="Zo8-Pf-6Wc"/>
                                     <constraint firstItem="3Qb-0J-qLO" firstAttribute="centerX" secondItem="1r9-y6-Cag" secondAttribute="centerX" id="k7U-n3-bLj"/>
                                     <constraint firstAttribute="trailing" secondItem="3Qb-0J-qLO" secondAttribute="trailing" id="njW-1y-7Ap"/>
@@ -198,8 +226,8 @@
                             <constraint firstAttribute="bottom" secondItem="aoT-Kb-KiP" secondAttribute="bottom" id="OWU-9p-Ffe"/>
                             <constraint firstItem="aoT-Kb-KiP" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="SwO-e3-Rgg"/>
                             <constraint firstItem="aoT-Kb-KiP" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailing" id="YOg-SV-837"/>
-                            <constraint firstItem="1r9-y6-Cag" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="c8X-08-TzZ"/>
-                            <constraint firstItem="1r9-y6-Cag" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="g8G-Ml-W0F"/>
+                            <constraint firstItem="1r9-y6-Cag" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="c8X-08-TzZ"/>
+                            <constraint firstItem="1r9-y6-Cag" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailing" id="g8G-Ml-W0F"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
@@ -215,9 +243,6 @@
     </scenes>
     <resources>
         <image name="background" width="150" height="150"/>
-        <image name="icone_nome" width="200" height="66"/>
-        <image name="papel" width="341" height="341"/>
-        <image name="pedra" width="341" height="341"/>
-        <image name="tesoura" width="341" height="341"/>
+        <image name="icone_nome" width="200" height="66.5"/>
     </resources>
 </document>

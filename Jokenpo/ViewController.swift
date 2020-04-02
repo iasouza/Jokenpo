@@ -44,10 +44,10 @@ class ViewController: UIViewController {
             resultado.text = "Empatou!"
         }else if resJogador == "pedra" && resMaquina == "tesoura" || resJogador == "papel" && resMaquina == "pedra" || resJogador == "tesoura" && resMaquina == "papel"{
             resultado.textColor = UIColor.green
-            resultado.text = "Você Ganhou!"
+            resultado.text = "Ganhou!"
         }else {
             resultado.textColor = UIColor.red
-            resultado.text = "Você Perdeu!"
+            resultado.text = "Perdeu!"
         }
         
     }
