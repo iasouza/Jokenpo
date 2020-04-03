@@ -27,7 +27,7 @@ class ViewController: UIViewController {
     }
 
     @IBAction func botaoSelecionado(_ sender: UIButton) {
-    
+
         let maquina = opcoes.randomElement()!
         let jogador = sender.currentTitle!
         imagemMaquina.image = UIImage(named:maquina+".jpg")

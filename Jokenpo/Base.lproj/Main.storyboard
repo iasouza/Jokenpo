@@ -10,7 +10,6 @@
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Jokenpo" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
@@ -115,86 +114,42 @@
                                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="Cyu-0k-g6f" userLabel="OpcoesView">
+                                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" alignment="center" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="Cyu-0k-g6f" userLabel="OpcoesView">
                                                 <rect key="frame" x="0.0" y="51" width="414" height="229.5"/>
                                                 <subviews>
-                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cJI-RQ-ogT">
-                                                        <rect key="frame" x="0.0" y="89.5" width="138" height="50"/>
-                                                        <subviews>
-                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LA5-xB-wW0" userLabel="pedra">
-                                                                <rect key="frame" x="9" y="-10.5" width="120" height="71"/>
-                                                                <color key="backgroundColor" red="0.018465828149999999" green="0.47789192200000002" blue="0.50196814540000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                                                <constraints>
-                                                                    <constraint firstAttribute="width" constant="120" id="6ji-MB-iWn"/>
-                                                                    <constraint firstAttribute="height" constant="71" id="AwA-sv-9bS"/>
-                                                                </constraints>
-                                                                <fontDescription key="fontDescription" name="MuktaMahee-Regular" family="Mukta Mahee" pointSize="35"/>
-                                                                <size key="titleShadowOffset" width="0.0" height="1"/>
-                                                                <state key="normal" title="pedra">
-                                                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                                    <color key="titleShadowColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                                </state>
-                                                                <connections>
-                                                                    <action selector="botaoSelecionado:" destination="BYZ-38-t0r" eventType="touchUpInside" id="IBJ-I5-3zL"/>
-                                                                </connections>
-                                                            </button>
-                                                        </subviews>
-                                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                        <constraints>
-                                                            <constraint firstItem="LA5-xB-wW0" firstAttribute="centerX" secondItem="cJI-RQ-ogT" secondAttribute="centerX" id="Gn6-3f-GcR"/>
-                                                            <constraint firstItem="LA5-xB-wW0" firstAttribute="centerY" secondItem="cJI-RQ-ogT" secondAttribute="centerY" id="UdA-l8-58g"/>
-                                                        </constraints>
-                                                    </view>
-                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Fzc-it-FWW">
-                                                        <rect key="frame" x="138" y="89.5" width="138" height="50"/>
-                                                        <subviews>
-                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NZD-Vd-wED" userLabel="papel">
-                                                                <rect key="frame" x="9" y="-10.5" width="120" height="71"/>
-                                                                <color key="backgroundColor" red="0.018465828149999999" green="0.47789192200000002" blue="0.50196814540000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                                                <constraints>
-                                                                    <constraint firstAttribute="height" constant="71" id="Mud-lG-epx"/>
-                                                                    <constraint firstAttribute="width" constant="120" id="VFL-RG-lpS"/>
-                                                                </constraints>
-                                                                <fontDescription key="fontDescription" name="MuktaMahee-Regular" family="Mukta Mahee" pointSize="35"/>
-                                                                <state key="normal" title="papel">
-                                                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                                </state>
-                                                                <connections>
-                                                                    <action selector="botaoSelecionado:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Vx9-Fp-ZAX"/>
-                                                                </connections>
-                                                            </button>
-                                                        </subviews>
-                                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                        <constraints>
-                                                            <constraint firstItem="NZD-Vd-wED" firstAttribute="centerX" secondItem="Fzc-it-FWW" secondAttribute="centerX" id="Rb3-hz-OZd"/>
-                                                            <constraint firstItem="NZD-Vd-wED" firstAttribute="centerY" secondItem="Fzc-it-FWW" secondAttribute="centerY" id="yJ5-Cd-rOX"/>
-                                                        </constraints>
-                                                    </view>
-                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="z6e-eW-PxO">
-                                                        <rect key="frame" x="276" y="89.5" width="138" height="50"/>
-                                                        <subviews>
-                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0qD-Dh-guy" userLabel="tesoura">
-                                                                <rect key="frame" x="9" y="-10.5" width="120" height="71"/>
-                                                                <color key="backgroundColor" red="0.018465828149999999" green="0.47789192200000002" blue="0.50196814540000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                                                <constraints>
-                                                                    <constraint firstAttribute="width" constant="120" id="LF5-Dr-wLh"/>
-                                                                    <constraint firstAttribute="height" constant="71" id="XUc-hL-XK9"/>
-                                                                </constraints>
-                                                                <fontDescription key="fontDescription" name="MuktaMahee-Regular" family="Mukta Mahee" pointSize="35"/>
-                                                                <state key="normal" title="tesoura">
-                                                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                                </state>
-                                                                <connections>
-                                                                    <action selector="botaoSelecionado:" destination="BYZ-38-t0r" eventType="touchUpInside" id="QRj-0G-ZEG"/>
-                                                                </connections>
-                                                            </button>
-                                                        </subviews>
-                                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                        <constraints>
-                                                            <constraint firstItem="0qD-Dh-guy" firstAttribute="centerY" secondItem="z6e-eW-PxO" secondAttribute="centerY" id="F7U-kn-7kA"/>
-                                                            <constraint firstItem="0qD-Dh-guy" firstAttribute="centerX" secondItem="z6e-eW-PxO" secondAttribute="centerX" id="JsC-Nl-l1K"/>
-                                                        </constraints>
-                                                    </view>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RHr-In-tIX">
+                                                        <rect key="frame" x="0.0" y="79" width="132.5" height="71"/>
+                                                        <color key="backgroundColor" red="0.018465828149999999" green="0.47789192200000002" blue="0.50196814540000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                        <fontDescription key="fontDescription" name="MuktaMahee-Regular" family="Mukta Mahee" pointSize="35"/>
+                                                        <state key="normal" title="pedra">
+                                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        </state>
+                                                        <connections>
+                                                            <action selector="botaoSelecionado:" destination="BYZ-38-t0r" eventType="touchUpInside" id="xX3-Jw-hLb"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LBQ-WO-52R">
+                                                        <rect key="frame" x="140.5" y="79" width="133" height="71"/>
+                                                        <color key="backgroundColor" red="0.018465828149999999" green="0.47789192200000002" blue="0.50196814540000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                        <fontDescription key="fontDescription" name="MuktaMahee-Regular" family="Mukta Mahee" pointSize="35"/>
+                                                        <state key="normal" title="papel">
+                                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        </state>
+                                                        <connections>
+                                                            <action selector="botaoSelecionado:" destination="BYZ-38-t0r" eventType="touchUpInside" id="8aU-z5-1V0"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ODK-7v-g10">
+                                                        <rect key="frame" x="281.5" y="79" width="132.5" height="71"/>
+                                                        <color key="backgroundColor" red="0.018465828149999999" green="0.47789192200000002" blue="0.50196814540000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                        <fontDescription key="fontDescription" name="MuktaMahee-Regular" family="Mukta Mahee" pointSize="35"/>
+                                                        <state key="normal" title="tesoura">
+                                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        </state>
+                                                        <connections>
+                                                            <action selector="botaoSelecionado:" destination="BYZ-38-t0r" eventType="touchUpInside" id="0ju-K9-O9t"/>
+                                                        </connections>
+                                                    </button>
                                                 </subviews>
                                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                             </stackView>
@@ -237,6 +192,7 @@
                         <outlet property="resultado" destination="bMs-QY-HsB" id="6RA-Zg-qQr"/>
                     </connections>
                 </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="136.23188405797103" y="137.27678571428569"/>
         </scene>
